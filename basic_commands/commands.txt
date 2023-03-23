@@ -180,5 +180,103 @@ wc - command is used to count the lines, words, and characters in a file.
   
 
 ###############
-
+od - command is used to display the content of a file in different s, such as hexadecimal, octal, and ASCII characters.
   
+  od -b <fileName>      // Octal format  
+  od -t x1 <fileName>   // Hexa decimal format  
+  od -c <fileName>     // ASCII character format 
+  
+  example - od -b demo.txt
+            od -t demo.txt
+            od -c demo.txt
+           
+
+###############
+sort - command is used to sort files in alphabetical order.
+
+  sort <file name> 
+  
+  example - sort demo.txt
+  
+###############
+gzip - command is used to truncate the file size. It is a compressing tool. It replaces the original file by the compressed file having '.gz' extension.
+  
+  gzip <file1> <file2> <file3>... 
+  
+  example - gzip demo.txt demo1.txt
+  
+###############
+gunzip - command is used to decompress a file. It is a reverse operation of gzip command.
+
+  gunzip <file1> <file2> <file3>. .
+  
+  example - gunzip demo.txt demo1.txt
+  
+###############
+find - command is used to find a particular file within a directory. It also supports various options to find a file such as byname, by type, by date, and more.
+The following symbols are used after the find command:
+  (.) : For current directory name
+  (/) : For root
+  
+    find . -name "*.pdf" 
+    
+    example - find . -name "*.pdf" 
+    
+    
+###############
+locate - command is used to search a file by file name. It is quite similar to find command; the difference is that it is a background process. It searches the file in the database, whereas the find command searches in the file system. It is faster than the find command. To find the file with the locates command, keep your database updated.
+  
+  locate <file name>  
+  
+  example - locate demo.txt
+  
+###############
+date - command is used to display date, time, time zone, and more.
+  
+  date
+  
+  example - date
+  
+################
+zcat - command is used to display the compressed files.
+
+  zcat <file name>  
+  
+  example - zcat demo.txt
+  
+################
+df - command is used to display the disk space used in the file system. It displays the output as in the number of used blocks, available blocks, and the mounted directory.
+
+  df
+  
+################
+mount - command is used to connect an external device file system to the system's file system.
+
+  mount -t type <device> <directory>  
+  
+  example - mount
+  
+################
+exit - command is used to exit from the current shell. It takes a parameter as a number and exits the shell with a return of status number.
+
+################
+ clear - command is used to clear the terminal screen.
+ 
+################
+ip - command is an updated version of the ipconfig command. It is used to assign an IP address, initialize an interface, disable an interface.
+  ip a or ip addr 
+   
+   example - ip a
+ 
+################
+ssh - command is used to create a remote connection through the ssh protocol.
+  ssh user_name@host(IP/Domain_name)</p>  
+  
+###############
+host - command is used to display the IP address for a given domain name and vice versa. It performs the DNS lookups for the DNS Query.
+
+  host <domain name> or <ip address>  
+  
+  example - host google.com
+  
+#################################################  END ########################################################
