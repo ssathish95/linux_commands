@@ -31,7 +31,27 @@ touch - command is used to create empty files. We can create multiple empty file
   
   example - touch demo.txt demo1.txt
   
+  
+#####################
+chmod - command is used to change file permission
+  
+  chmod XXX <filename>
+  4 or r- read
+  2 or w- write
+  1 or x- execute
+  u - user level permission
+  g - group level permission
+  o - other user level permission
+  
+  
+  example - chmod 600 learningnotes.txt
+            chmod u=rwx,g=rx,o=rx learningnotes.txt
 ###############
+chown - command is an abbreviation for “changing owner”
+  
+    example - chown user demo.txt
+              chown group:user demo.txt
+
 
 cat - command is a multi-purpose utility in the Linux system. It can be used to create a file, display content of the file, copy the content of one file to another file, and more.
   cat [OPTION]... [FILE]..  (cat <file name>)
