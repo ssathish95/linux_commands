@@ -134,5 +134,51 @@ cut - command is used to select a specific column of a file. The '-d' option is 
 grep - command is the most powerful and used filter in a Linux system. The 'grep' stands for "global regular expression print." It is useful for searching the content from a file. Generally, it is used with the pipe.
   command | grep <searchWord> 
   
+  example - cat demo.txt | grep hello
+################
+'comm' - command is used to compare two files or streams. By default, it displays three columns, first displays non-matching items of the first file, second indicates the non-matching item of the second file, and the third column displays the matching items of both files.
+  comm <file1> <file2>  
   
+  example - comm demo.txt demo1.txt
+  
+#################
+sed - command is also known as stream editor. It is used to edit files using a regular expression. It does not permanently edit files; instead, the edited content remains only on display. It does not affect the actual file.
+  
+  command | sed 's/<oldWord>/<newWord>/'  
+  
+  example - cat demo.txt | sed 's/hello/hi/'
+  
+#################
+tee - command is quite similar to the cat command. The only difference between both filters is that it puts standard input on standard output and also write them into a file.
+
+  cat <fileName> | tee <newFile> |  cat or tac |..... 
+  
+  example - cat demo.txt | tee new.txt | cat
+ 
+################
+tr - command is used to translate the file content like from lower case to upper case.
+  
+  command | tr <'old'> <'new'> 
+  
+  example - cat marks.txt | tr 'happy' 'HAPPY'
+  
+
+################
+uniq - command is used to form a sorted list in which every word will occur only once.
+
+  command <fileName> | uniq  
+  
+  example - sort demo.txt | uniq
+  
+
+################
+wc - command is used to count the lines, words, and characters in a file.
+  
+  wc <file name>  
+  
+  example - wc demo.txt
+  
+
+###############
+
   
