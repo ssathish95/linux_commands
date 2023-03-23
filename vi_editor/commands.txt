@@ -1,0 +1,36 @@
+OPENING EDITOR
+vi - editor will be opened without any filename
+vi filename - editor will be opened with given filename
+
+MODES OF VI EDITOR
+command mode - pressing ESC
+insert mode   -   pressing i / I
+
+MOVING CURSOR WITHIN FILE
+l - moving cursor towards left
+h- moving cursor towards right
+k-moving cursor up
+j-moving cursor down
+
+INSERTING TEXT
+i-insert
+a-insertion begin after cursor
+A-insertion begins at end of line
+o- inserts new line after cursor
+O-inserts new line above cursor
+
+COPY & PASTE
+yy - copies the current line
+p - paste the copied line
+
+SAVE & QUIT
+go to command mode by pressing ESC
+:w - to save the content
+:w filename - to save the content with filename
+:q - quit the file
+:q! - quit the file without saving the content
+:wq - save the content and quit the file
+
+DELETE LINE
+dd - deletes the whole line under the cursor.
+5dd deletes multiple (5) lines, starting at the cursor.
