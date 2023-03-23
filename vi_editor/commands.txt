@@ -34,3 +34,12 @@ go to command mode by pressing ESC
 DELETE LINE
 dd - deletes the whole line under the cursor.
 5dd deletes multiple (5) lines, starting at the cursor.
+
+Search for next word
+/<WORD TO SEARCH>
+n - To find the next occurrence
+N - go back to the previous occurrence
+Example --> /hello
+
+Search for any line starting with a word
+/^def
